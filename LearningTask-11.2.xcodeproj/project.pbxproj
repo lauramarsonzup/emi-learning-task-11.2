@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		582DC61B291BCEE00072B4C1 /* SimpleAlert+UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582DC61A291BCEE00072B4C1 /* SimpleAlert+UIAlertController.swift */; };
+		5854331D2915725E00364D37 /* StarshipsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5854331C2915725E00364D37 /* StarshipsAPI.swift */; };
+		5854332429193EBC00364D37 /* CustomPatterns+DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5854332329193EBC00364D37 /* CustomPatterns+DateFormatter.swift */; };
+		5854332629193F0200364D37 /* DecodingFormattedDates+JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5854332529193F0200364D37 /* DecodingFormattedDates+JSONDecoder.swift */; };
 		58AF0FEE291427B300BEA39D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AF0FED291427B300BEA39D /* AppDelegate.swift */; };
 		58AF0FF0291427B300BEA39D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AF0FEF291427B300BEA39D /* SceneDelegate.swift */; };
-		58AF0FF2291427B300BEA39D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AF0FF1291427B300BEA39D /* ViewController.swift */; };
+		58AF0FF2291427B300BEA39D /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AF0FF1291427B300BEA39D /* MoviesViewController.swift */; };
 		58AF0FF5291427B300BEA39D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58AF0FF3291427B300BEA39D /* Main.storyboard */; };
 		58AF0FF7291427B600BEA39D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58AF0FF6291427B600BEA39D /* Assets.xcassets */; };
 		58AF0FFA291427B600BEA39D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58AF0FF8291427B600BEA39D /* LaunchScreen.storyboard */; };
+		58F50FCA291C06F400C793DD /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F50FC9291C06F400C793DD /* Starship.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		58AF0FEA291427B300BEA39D /* LearningTask-11.3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LearningTask-11.3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		582DC61A291BCEE00072B4C1 /* SimpleAlert+UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimpleAlert+UIAlertController.swift"; sourceTree = "<group>"; };
+		5854331C2915725E00364D37 /* StarshipsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsAPI.swift; sourceTree = "<group>"; };
+		5854332329193EBC00364D37 /* CustomPatterns+DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomPatterns+DateFormatter.swift"; sourceTree = "<group>"; };
+		5854332529193F0200364D37 /* DecodingFormattedDates+JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DecodingFormattedDates+JSONDecoder.swift"; sourceTree = "<group>"; };
+		58AF0FEA291427B300BEA39D /* LearningTask-11.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LearningTask-11.2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58AF0FED291427B300BEA39D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58AF0FEF291427B300BEA39D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		58AF0FF1291427B300BEA39D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		58AF0FF1291427B300BEA39D /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		58AF0FF4291427B300BEA39D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58AF0FF6291427B600BEA39D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58AF0FF9291427B600BEA39D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58AF0FFB291427B600BEA39D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58F50FC9291C06F400C793DD /* Starship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,10 +47,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58543321291853C800364D37 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				58543322291853DA00364D37 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		58543322291853DA00364D37 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5854332329193EBC00364D37 /* CustomPatterns+DateFormatter.swift */,
+				5854332529193F0200364D37 /* DecodingFormattedDates+JSONDecoder.swift */,
+				582DC61A291BCEE00072B4C1 /* SimpleAlert+UIAlertController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		58AF0FE1291427B300BEA39D = {
 			isa = PBXGroup;
 			children = (
-				58AF0FEC291427B300BEA39D /* LearningTask-11.3 */,
+				58AF0FEC291427B300BEA39D /* LearningTask-11.2 */,
 				58AF0FEB291427B300BEA39D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +76,82 @@
 		58AF0FEB291427B300BEA39D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				58AF0FEA291427B300BEA39D /* LearningTask-11.3.app */,
+				58AF0FEA291427B300BEA39D /* LearningTask-11.2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		58AF0FEC291427B300BEA39D /* LearningTask-11.3 */ = {
+		58AF0FEC291427B300BEA39D /* LearningTask-11.2 */ = {
+			isa = PBXGroup;
+			children = (
+				58AF100229142ECD00BEA39D /* Supportive Files */,
+				58AF0FF6291427B600BEA39D /* Assets.xcassets */,
+				58543321291853C800364D37 /* Common */,
+				58AF100B29147A8700BEA39D /* API */,
+				58AF10082914787400BEA39D /* Models */,
+				58AF100129142EB700BEA39D /* View */,
+				58AF100329142EF700BEA39D /* Scenes */,
+			);
+			path = "LearningTask-11.2";
+			sourceTree = "<group>";
+		};
+		58AF100129142EB700BEA39D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				58AF0FF3291427B300BEA39D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		58AF100229142ECD00BEA39D /* Supportive Files */ = {
 			isa = PBXGroup;
 			children = (
 				58AF0FED291427B300BEA39D /* AppDelegate.swift */,
 				58AF0FEF291427B300BEA39D /* SceneDelegate.swift */,
-				58AF0FF1291427B300BEA39D /* ViewController.swift */,
-				58AF0FF3291427B300BEA39D /* Main.storyboard */,
-				58AF0FF6291427B600BEA39D /* Assets.xcassets */,
 				58AF0FF8291427B600BEA39D /* LaunchScreen.storyboard */,
 				58AF0FFB291427B600BEA39D /* Info.plist */,
 			);
-			path = "LearningTask-11.3";
+			name = "Supportive Files";
+			sourceTree = "<group>";
+		};
+		58AF100329142EF700BEA39D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				58AF10042914780B00BEA39D /* Movies */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		58AF10042914780B00BEA39D /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				58AF0FF1291427B300BEA39D /* MoviesViewController.swift */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		58AF10082914787400BEA39D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				58F50FC9291C06F400C793DD /* Starship.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		58AF100B29147A8700BEA39D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5854331C2915725E00364D37 /* StarshipsAPI.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		58AF0FE9291427B300BEA39D /* LearningTask-11.3 */ = {
+		58AF0FE9291427B300BEA39D /* LearningTask-11.2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58AF0FFE291427B600BEA39D /* Build configuration list for PBXNativeTarget "LearningTask-11.3" */;
+			buildConfigurationList = 58AF0FFE291427B600BEA39D /* Build configuration list for PBXNativeTarget "LearningTask-11.2" */;
 			buildPhases = (
 				58AF0FE6291427B300BEA39D /* Sources */,
 				58AF0FE7291427B300BEA39D /* Frameworks */,
@@ -82,9 +161,9 @@
 			);
 			dependencies = (
 			);
-			name = "LearningTask-11.3";
-			productName = "LearningTask-11.3";
-			productReference = 58AF0FEA291427B300BEA39D /* LearningTask-11.3.app */;
+			name = "LearningTask-11.2";
+			productName = "LearningTask-11.2";
+			productReference = 58AF0FEA291427B300BEA39D /* LearningTask-11.2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +181,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 58AF0FE5291427B300BEA39D /* Build configuration list for PBXProject "LearningTask-11.3" */;
+			buildConfigurationList = 58AF0FE5291427B300BEA39D /* Build configuration list for PBXProject "LearningTask-11.2" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +194,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				58AF0FE9291427B300BEA39D /* LearningTask-11.3 */,
+				58AF0FE9291427B300BEA39D /* LearningTask-11.2 */,
 			);
 		};
 /* End PBXProject section */
@@ -138,8 +217,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58AF0FF2291427B300BEA39D /* ViewController.swift in Sources */,
+				5854331D2915725E00364D37 /* StarshipsAPI.swift in Sources */,
+				58AF0FF2291427B300BEA39D /* MoviesViewController.swift in Sources */,
+				582DC61B291BCEE00072B4C1 /* SimpleAlert+UIAlertController.swift in Sources */,
+				58F50FCA291C06F400C793DD /* Starship.swift in Sources */,
 				58AF0FEE291427B300BEA39D /* AppDelegate.swift in Sources */,
+				5854332629193F0200364D37 /* DecodingFormattedDates+JSONDecoder.swift in Sources */,
+				5854332429193EBC00364D37 /* CustomPatterns+DateFormatter.swift in Sources */,
 				58AF0FF0291427B300BEA39D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,19 +372,20 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "LearningTask-11.3/Info.plist";
+				INFOPLIST_FILE = "LearningTask-11.2/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Swapi Consumer";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.zup.LearningTask-11-3";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.zup.LearningTask-11.2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -319,19 +404,20 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "LearningTask-11.3/Info.plist";
+				INFOPLIST_FILE = "LearningTask-11.2/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Swapi Consumer";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.zup.LearningTask-11-3";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.zup.LearningTask-11.2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -345,7 +431,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		58AF0FE5291427B300BEA39D /* Build configuration list for PBXProject "LearningTask-11.3" */ = {
+		58AF0FE5291427B300BEA39D /* Build configuration list for PBXProject "LearningTask-11.2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58AF0FFC291427B600BEA39D /* Debug */,
@@ -354,7 +440,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58AF0FFE291427B600BEA39D /* Build configuration list for PBXNativeTarget "LearningTask-11.3" */ = {
+		58AF0FFE291427B600BEA39D /* Build configuration list for PBXNativeTarget "LearningTask-11.2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58AF0FFF291427B600BEA39D /* Debug */,

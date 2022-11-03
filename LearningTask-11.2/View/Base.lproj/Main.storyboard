@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4EM-Ro-Yoq">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="YcE-QZ-g1r">
+            <objects>
+                <navigationController id="4EM-Ro-Yoq" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cJY-QT-pte">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ooo-Ng-gYm" kind="relationship" relationship="rootViewController" id="3PS-cF-SlD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c4G-VU-ICZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-717" y="-172"/>
+        </scene>
+        <!--Movies-->
+        <scene sceneID="BK3-Jz-ymd">
+            <objects>
+                <tableViewController id="ooo-Ng-gYm" customClass="MoviesViewController" customModule="LearningTask_11_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="dmh-5N-t6P">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="FuE-IY-leO" userLabel="Remover Essa View">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="390"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Yoda" translatesAutoresizingMaskIntoConstraints="NO" id="ahz-la-Ky6">
+                                    <rect key="frame" x="163" y="131" width="64" height="64"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="64" id="Ymw-xJ-7jE"/>
+                                        <constraint firstAttribute="width" constant="64" id="k6P-rV-fuA"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Consumir um serviço você deve!&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g56-za-9bS">
+                                    <rect key="frame" x="64" y="195" width="262" height="54"/>
+                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="22"/>
+                                    <color key="textColor" systemColor="quaternaryLabelColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="ahz-la-Ky6" firstAttribute="centerX" secondItem="FuE-IY-leO" secondAttribute="centerX" id="5ep-lC-jCB"/>
+                                <constraint firstItem="ahz-la-Ky6" firstAttribute="centerY" secondItem="FuE-IY-leO" secondAttribute="centerY" constant="-32" id="CGU-hB-CqH"/>
+                                <constraint firstItem="g56-za-9bS" firstAttribute="centerX" secondItem="ahz-la-Ky6" secondAttribute="centerX" id="Kab-dC-hzY"/>
+                                <constraint firstItem="g56-za-9bS" firstAttribute="top" secondItem="ahz-la-Ky6" secondAttribute="bottom" id="S0m-Da-rNl"/>
+                                <constraint firstItem="g56-za-9bS" firstAttribute="leading" secondItem="FuE-IY-leO" secondAttribute="leading" constant="64" id="aPC-wf-27c"/>
+                                <constraint firstAttribute="trailing" secondItem="g56-za-9bS" secondAttribute="trailing" constant="64" id="wNU-wV-WtU"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieTableViewCell" id="Ncm-F0-ICH" customClass="DefaultTableViewCell" customModule="LearningTask_11_2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="440" width="390" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ncm-F0-ICH" id="Ste-oI-dON">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ooo-Ng-gYm" id="zjz-3A-naA"/>
+                            <outlet property="delegate" destination="ooo-Ng-gYm" id="Kt8-y1-z27"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Movies" id="cNf-cw-LTk"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q1r-ea-b7S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.84615384615384" y="-23.459715639810426"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Yoda" width="167" height="167"/>
+        <systemColor name="quaternaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.17647058823529413" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
