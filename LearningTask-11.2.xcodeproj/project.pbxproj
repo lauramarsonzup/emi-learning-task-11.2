@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		036DE3A1293AACD600E12777 /* DefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036DE3A0293AACD600E12777 /* DefaultTableViewCell.swift */; };
+		036DE3A5293E328F00E12777 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036DE3A4293E328F00E12777 /* MovieDetailsViewController.swift */; };
+		036DE3A8293E335B00E12777 /* MovieDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036DE3A7293E335B00E12777 /* MovieDetailsHeaderView.swift */; };
 		582DC61B291BCEE00072B4C1 /* SimpleAlert+UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582DC61A291BCEE00072B4C1 /* SimpleAlert+UIAlertController.swift */; };
 		5854331D2915725E00364D37 /* StarshipsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5854331C2915725E00364D37 /* StarshipsAPI.swift */; };
 		5854332429193EBC00364D37 /* CustomPatterns+DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5854332329193EBC00364D37 /* CustomPatterns+DateFormatter.swift */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		036DE3A0293AACD600E12777 /* DefaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCell.swift; sourceTree = "<group>"; };
+		036DE3A4293E328F00E12777 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		036DE3A7293E335B00E12777 /* MovieDetailsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsHeaderView.swift; sourceTree = "<group>"; };
 		582DC61A291BCEE00072B4C1 /* SimpleAlert+UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimpleAlert+UIAlertController.swift"; sourceTree = "<group>"; };
 		5854331C2915725E00364D37 /* StarshipsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsAPI.swift; sourceTree = "<group>"; };
 		5854332329193EBC00364D37 /* CustomPatterns+DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomPatterns+DateFormatter.swift"; sourceTree = "<group>"; };
@@ -47,6 +53,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		036DE3A2293AADA800E12777 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				036DE3A0293AACD600E12777 /* DefaultTableViewCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		036DE3A3293E326C00E12777 /* MovieDetails */ = {
+			isa = PBXGroup;
+			children = (
+				036DE3A6293E331A00E12777 /* View */,
+				036DE3A4293E328F00E12777 /* MovieDetailsViewController.swift */,
+			);
+			path = MovieDetails;
+			sourceTree = "<group>";
+		};
+		036DE3A6293E331A00E12777 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				036DE3A7293E335B00E12777 /* MovieDetailsHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		58543321291853C800364D37 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +129,7 @@
 		58AF100129142EB700BEA39D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				036DE3A2293AADA800E12777 /* Components */,
 				58AF0FF3291427B300BEA39D /* Main.storyboard */,
 			);
 			path = View;
@@ -117,6 +149,7 @@
 		58AF100329142EF700BEA39D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				036DE3A3293E326C00E12777 /* MovieDetails */,
 				58AF10042914780B00BEA39D /* Movies */,
 			);
 			path = Scenes;
@@ -217,14 +250,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				036DE3A5293E328F00E12777 /* MovieDetailsViewController.swift in Sources */,
 				5854331D2915725E00364D37 /* StarshipsAPI.swift in Sources */,
 				58AF0FF2291427B300BEA39D /* MoviesViewController.swift in Sources */,
+				036DE3A1293AACD600E12777 /* DefaultTableViewCell.swift in Sources */,
 				582DC61B291BCEE00072B4C1 /* SimpleAlert+UIAlertController.swift in Sources */,
 				58F50FCA291C06F400C793DD /* Starship.swift in Sources */,
 				58AF0FEE291427B300BEA39D /* AppDelegate.swift in Sources */,
 				5854332629193F0200364D37 /* DecodingFormattedDates+JSONDecoder.swift in Sources */,
 				5854332429193EBC00364D37 /* CustomPatterns+DateFormatter.swift in Sources */,
 				58AF0FF0291427B300BEA39D /* SceneDelegate.swift in Sources */,
+				036DE3A8293E335B00E12777 /* MovieDetailsHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
