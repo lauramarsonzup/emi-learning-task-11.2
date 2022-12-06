@@ -100,23 +100,24 @@
         <scene sceneID="WCc-ch-1sB">
             <objects>
                 <tableViewController storyboardIdentifier="MovieDetailsViewController" id="fnU-N0-mUA" customClass="MovieDetailsViewController" customModule="LearningTask_11_2" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="DMT-9n-qfk">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="DMT-9n-qfk">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <inset key="separatorInset" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StarshipTableViewCell" id="lNY-aU-r23" customClass="DefaultTableViewCell" customModule="LearningTask_11_2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="390" height="69.333335876464844"/>
+                                <rect key="frame" x="20" y="55.333332061767578" width="350" height="69.333335876464844"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lNY-aU-r23" id="xsb-bD-9Hd">
-                                    <rect key="frame" x="0.0" y="0.0" width="390" height="69.333335876464844"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="69.333335876464844"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="aeG-Lm-ZBL" userLabel="Container Stack View">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="69.333333333333329"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="69.333333333333329"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="sTg-me-pyH" userLabel="Labels Stack View">
-                                                    <rect key="frame" x="24" y="16.333333333333329" width="342" height="37"/>
+                                                    <rect key="frame" x="24" y="16.333333333333329" width="302" height="37"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da nave" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTQ-t9-CVP" userLabel="Nome Label">
                                                             <rect key="frame" x="0.0" y="0.0" width="104.33333333333333" height="18.666666666666668"/>
