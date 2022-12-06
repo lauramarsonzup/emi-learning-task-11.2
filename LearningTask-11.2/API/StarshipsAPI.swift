@@ -8,7 +8,8 @@
 import Foundation
 
 class StarshipsAPI {
-
+    private let filmsEndpoint = "https://swapi.dev/api/films"
+    
     var session: URLSession
     var decoder: JSONDecoder
     
@@ -73,6 +74,47 @@ class StarshipsAPI {
                 
             } catch {
                 failureHandler(.invalidData)
+            }
+        }
+        
+        dataTask.resume()
+    }
+    
+    func getFilms(completionHandler: @escaping ([Film]) -> Void,
+                  failureHandler: @escaping (StarshipsAPI.Error) -> Void) {
+        
+        guard let url = URL(string: filmsEndpoint) else { return }
+        
+        let dataTask = session.dataTask(with: url) { [weak self] data, response, error in
+            if let error = error {
+                DispatchQueue.main.async {
+                    failureHandler(.unableToRequest(error))
+                }
+                return
+            }
+            
+            guard let data = data,
+                  let response = response as? HTTPURLResponse,
+                  response.statusCode == 200 else {
+                DispatchQueue.main.async {
+                    failureHandler(.fetchFailed)
+                }
+                return
+            }
+                        
+            do {
+                guard let self = self else { return }
+                
+                let films = try self.decoder.decode(Films.self, from: data)
+                print(films)
+                DispatchQueue.main.async {
+                    completionHandler(films.results)
+                }
+                
+            } catch {
+                DispatchQueue.main.async {
+                    failureHandler(.invalidData)
+                }
             }
         }
         

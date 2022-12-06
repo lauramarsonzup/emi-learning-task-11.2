@@ -10,6 +10,7 @@
 		036DE3A1293AACD600E12777 /* DefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036DE3A0293AACD600E12777 /* DefaultTableViewCell.swift */; };
 		036DE3A5293E328F00E12777 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036DE3A4293E328F00E12777 /* MovieDetailsViewController.swift */; };
 		036DE3A8293E335B00E12777 /* MovieDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036DE3A7293E335B00E12777 /* MovieDetailsHeaderView.swift */; };
+		036DE3AA293F867900E12777 /* Films.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036DE3A9293F867900E12777 /* Films.swift */; };
 		582DC61B291BCEE00072B4C1 /* SimpleAlert+UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582DC61A291BCEE00072B4C1 /* SimpleAlert+UIAlertController.swift */; };
 		5854331D2915725E00364D37 /* StarshipsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5854331C2915725E00364D37 /* StarshipsAPI.swift */; };
 		5854332429193EBC00364D37 /* CustomPatterns+DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5854332329193EBC00364D37 /* CustomPatterns+DateFormatter.swift */; };
@@ -27,6 +28,7 @@
 		036DE3A0293AACD600E12777 /* DefaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCell.swift; sourceTree = "<group>"; };
 		036DE3A4293E328F00E12777 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		036DE3A7293E335B00E12777 /* MovieDetailsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsHeaderView.swift; sourceTree = "<group>"; };
+		036DE3A9293F867900E12777 /* Films.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Films.swift; sourceTree = "<group>"; };
 		582DC61A291BCEE00072B4C1 /* SimpleAlert+UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimpleAlert+UIAlertController.swift"; sourceTree = "<group>"; };
 		5854331C2915725E00364D37 /* StarshipsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsAPI.swift; sourceTree = "<group>"; };
 		5854332329193EBC00364D37 /* CustomPatterns+DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomPatterns+DateFormatter.swift"; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				58F50FC9291C06F400C793DD /* Starship.swift */,
+				036DE3A9293F867900E12777 /* Films.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				036DE3A5293E328F00E12777 /* MovieDetailsViewController.swift in Sources */,
+				036DE3AA293F867900E12777 /* Films.swift in Sources */,
 				5854331D2915725E00364D37 /* StarshipsAPI.swift in Sources */,
 				58AF0FF2291427B300BEA39D /* MoviesViewController.swift in Sources */,
 				036DE3A1293AACD600E12777 /* DefaultTableViewCell.swift in Sources */,
